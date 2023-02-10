@@ -1,0 +1,21 @@
+{
+    "name": "geckoboom/migrations",
+    "description": "Migrations package",
+    "type": "library",
+    "require": {
+        "php": ">=7.4"
+    },
+    "license": "BSD-3-Clause",
+    "autoload": {
+        "psr-4": {
+            "Geckoboom\\Migrations\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Artem Tsyganov",
+            "email": "ontroip@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
