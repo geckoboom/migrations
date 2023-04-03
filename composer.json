@@ -1,14 +1,22 @@
 {
     "name": "geckoboom/migrations",
     "description": "Migrations package",
+    "keywords": ["migrations", "library", "package", "whirlwind-framework"],
     "type": "library",
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "whirlwind-framework/framework": "dev-main"
     },
     "license": "BSD-3-Clause",
     "autoload": {
+        "files": ["src/helpers.php"],
         "psr-4": {
             "Geckoboom\\Migrations\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Geckoboom\\Migrations\\Test\\": "tests/"
         }
     },
     "authors": [
@@ -17,5 +25,9 @@
             "email": "ontroip@gmail.com"
         }
     ],
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "require-dev": {
+        "dg/bypass-finals": "dev-master",
+        "phpunit/phpunit": "9.6.x-dev"
+    }
 }
